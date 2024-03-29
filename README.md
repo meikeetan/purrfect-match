@@ -1,70 +1,52 @@
-# Getting Started with Create React App
+# PURRFECT MATCH 🐈🐾💛
+Purrfect Match is a React-based web application designed to streamline the process of pet adoption and sales, specifically focusing on our beloved feline friends. 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+With Purrfect Match, users can effortlessly create their own profiles and connect with others in the community to either list cats for adoption or sale, or to find their purrfect companion.
 
-## Available Scripts
+# LINK 🔗
+https://purrfect-match-one.vercel.app/
 
-In the project directory, you can run:
+# CODE EXPLANATION 🗣️
 
-### `npm start`
+# COMPONENTS 
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+randomCatPic.jsx 
+ • Renders a cat image, that changes every second, that is produced through calling Cat API 
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Navbar.jsx 
+ • Represents a responsive navigation bar to navigate to different sections of the application, namely “Explore” and “Profile” 
 
-### `npm test`
+ListingItem.jsx
+ • Renders a list item containing details of the listing item, including its name and price 
+ • Includes routing using ‘react-router-dom’ for navigation to a detailed view of the listing item
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+# PAGES
 
-### `npm run build`
+Profile.jsx 
+ • Accesses saved user’s info information from firebase
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+createListings.jsx
+ • Represents a form for users to create a new listing 
+ • Includes fields of various details about the listings such as name of cat, age, gender, price etc
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Explore.jsx 
+ • Represents a page for 2 different categories: cats for adoption and cats for sale 
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Category.jsx
+ • Displays listings for users to browse within a specific category 
+ • Fetch listings from firestone and displays them 
+ • When listings are fetched, they are displayed in a list using the ListingItem component. Each listing item includes details such as the name and price of the cat adoption or sale
+ • <Spinner />, a loading spinner that is displayed to indicate that data is being loaded
 
-### `npm run eject`
+Listing.jsx 
+ • Represents a detailed view page for a specific listing 
+ • The page includes information about the listing such as name, price, gender of the cat 
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+# SCREENSHOTS 📸
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+# FUTURE ENHANCEMENTS 
+ • Can have more pet categories 
+ • Include filter feature to filter cats shown based on user’s preference 
+ • Add input box to add remarks about cats when listing
+ • Include contact details or chat function to facilitate adoption or sale process between accounts
