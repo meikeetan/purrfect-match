@@ -1,14 +1,14 @@
-# PURRFECT MATCH 🐈🐾💛
+# PURRFECT MATCH 🐈🐾
 Purrfect Match is a React-based web application designed to streamline the process of pet adoption and sales, specifically focusing on our beloved feline friends. 
 
 With Purrfect Match, users can effortlessly create their own profiles and connect with others in the community to either list cats for adoption or sale, or to find their purrfect companion.
 
 # LINK 🔗
-https://purrfect-match-one.vercel.app/
+[https://purrfect-match-one.vercel.app/](https://purrfect-match-flax.vercel.app/)
 
 # CODE EXPLANATION 🗣️
 
-# COMPONENTS 
+## COMPONENTS 
 
 randomCatPic.jsx 
  • Renders a cat image, that changes every second, that is produced through calling Cat API 
@@ -20,7 +20,7 @@ ListingItem.jsx
  • Renders a list item containing details of the listing item, including its name and price 
  • Includes routing using ‘react-router-dom’ for navigation to a detailed view of the listing item
 
-# PAGES
+## PAGES
 
 Profile.jsx 
  • Accesses saved user’s info information from firebase
@@ -43,6 +43,8 @@ Listing.jsx
  • The page includes information about the listing such as name, price, gender of the cat 
 
 # SCREENSHOTS 📸
+<img width="1440" alt="Screenshot 2024-03-30 at 1 04 21 AM" src="https://github.com/meikeetan/purrfect-match/assets/152507735/a66c6471-494b-4d4a-874c-4101165de4e9">
+
 
 
 # FUTURE ENHANCEMENTS 
